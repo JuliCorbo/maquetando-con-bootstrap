@@ -1,0 +1,33 @@
+.container-fluid {
+    background-color:darkgreen
+    height: 4rem;
+}
+
+.rounded {
+    width: 75%;
+    box-shadow: inset 15px;
+}
+
+.cards-container{
+    margin-top: 2rem;
+    display: flex;
+    justify-content: space-evenly;
+
+}
+
+.maps-container {
+    width: 100%;
+
+
+}
+.maps{
+    display: flex;
+    justify-content:space-evenly;
+    margin-left: 4rem;
+    margin-top: 2rem;
+    border-radius: 15px;
+}
+
+.macetas {
+    width: 25%;
+}

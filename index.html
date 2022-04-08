@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <title>aplicando bootstrap</title>
+</head>
+<body>
+
+    <!--aplicando bootstrap para el navbar-->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">Contacto</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Nosotros</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Ventas</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Tutoriales
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <li><a class="dropdown-item" href="#">Action</a></li>
+                  <li><a class="dropdown-item" href="#">Another action</a></li>
+                  <li><hr class="dropdown-divider"></li>
+                  <li><a class="dropdown-item" href="#">Something else here</a></li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link disabled"></a>
+              </li>
+            </ul>
+            <form class="d-flex">
+              <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+              <button class="btn btn-outline-success" type="submit">Search</button>
+            </form>
+          </div>
+        </div>
+      </nav>
+      <div class="text-center">
+        <img src="img/banner1.jpg" class="rounded" alt="...">
+      </div>
+    <section class="cards-container">
+      <div class="card" style="width: 18rem;">
+        <img src="img/jardineria1.jpg" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">Jardineria</h5>
+          <p class="card-text">En este tutorial, vas a aprender los principios basicos de jardineria</p>
+          <a href="#" class="btn btn-primary">Ver mas!</a>
+        </div>
+      </div>
+      <div class="card" style="width: 18rem;">
+        <img src="img/planta2.jpg" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">Plantas de interior</h5>
+          <p class="card-text">En este tutorial vas conocer los cuidados para tus plantas de interior</p>
+          <a href="#" class="btn btn-primary">Ver mas!</a>
+        </div>
+      </div>
+      <div class="card" style="width: 18rem;">
+        <img src="img/planta3.jpg" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">Cactus y sucus</h5>
+          <p class="card-text">En este tutorial vas a conocer los cuidados mas importantes para los cactus y suculentas de tu hogar</p>
+          <a href="#" class="btn btn-primary">Ver mas!</a>
+        </div>
+      </div>
+      </section>
+
+
+    <!-- iframe maps-->
+    <section class="maps-container">
+
+      <div class="maps">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3395.146944957662!2d-60.791667484845284!3d-31.684550581315644!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95b5a87f331590ef%3A0xb8320f20822c51bc!2sVivero%20Pimpaji!5e0!3m2!1ses-419!2sar!4v1649387201825!5m2!1ses-419!2sar" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        <video class="macetas" controls src="img/macetas.mp4" autoplay muted></video>
+        </div>
+    </section>
+
+</body>
+</html>
