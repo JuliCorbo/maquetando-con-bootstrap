@@ -16,7 +16,7 @@ box-shadow: 5px 5px 27px 4px #000000;
 box-shadow: 5px 5px 27px 4px #000000;
 }
 
-}
+
 .card:hover{
     transform: scale(1.1);
     transition: all 1s ease;
@@ -87,8 +87,43 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#a2df7c', end
 
 
 }
+.igimg:hover{
+
+    transform: scale(1.1);
+    transition: all 1s ease;
+}
 .footer p {
     color: rgb(0, 0, 0);
     display: flex;
     align-items: center;
 }
+
+/*seccion Nosotros*/
+
+.img-fluid {
+    width: 80%;
+    margin-left: 2rem;
+    
+}
+
+.lorem-container {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    font-weight: 400;
+}
+
+.div-lorem {
+    width: 100%;
+    display: flex;
+    width: 35%;
+    margin-left: 2rem;
+    margin-top: 2rem;
+}
+
+.clip2 {
+    width: 80%;
+    -webkit-box-shadow: 5px 5px 27px 4px #000000; 
+box-shadow: 5px 5px 27px 4px #000000;
+}
+
