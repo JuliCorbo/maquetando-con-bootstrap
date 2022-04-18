@@ -1,19 +1,14 @@
 
 
 /*index*/
-@media screen and (sm) {
-    .cards-container .card {
-      display: block;
-    }
-  }
+
 
 @media screen and (max-width: 576px) {
-        
-    
-    .cards-container .card {
-        display: block;
-        }
 
+    .card{
+        display:inline;
+    }
+        
 
     .maps-container .macetas {
         display: none;
@@ -24,12 +19,11 @@
     }
     
     }
-
   
 body {
     background-color: #DFDBE5;
 background-image: url("data:image/svg+xml,%3Csvg width='44' height='12' viewBox='0 0 44 12' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M20 12v-2L0 0v10l4 2h16zm18 0l4-2V0L22 10v2h16zM20 0v8L4 0h16zm18 0L22 8V0h16z' fill='%2325a637' fill-opacity='0.09' fill-rule='evenodd'/%3E%3C/svg%3E");
-    font-family:josefin sans-serif;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 
 
@@ -61,6 +55,7 @@ background-image: url("data:image/svg+xml,%3Csvg width='44' height='12' viewBox=
 
 }
 .navbar-item:hover {
+    opacity: 0.9;
     transform:scale(1.1);
     transition: all 0.2s ease-in;
 }
@@ -68,7 +63,10 @@ background-image: url("data:image/svg+xml,%3Csvg width='44' height='12' viewBox=
 .card {
     -webkit-box-shadow: 5px 5px 27px 4px #000000; 
 box-shadow: 5px 5px 27px 4px #000000;
+grid-area: card;
 }
+
+/*banner*/
 .rounded {
     width: 75%;
     box-shadow: inset 15px;
@@ -76,6 +74,11 @@ box-shadow: 5px 5px 27px 4px #000000;
 box-shadow: 5px 5px 27px 4px #000000;
 }
 
+@media screen and (max-width:490px) {
+    .rounded {
+        width: 95%;
+    }
+}
 
 .card:hover{
     transform: scale(1.1);
@@ -126,23 +129,15 @@ box-shadow: 5px 5px 27px 4px #000000;
 
 .footer {
     width: 100%;
-    height: 12rem;
+    height: 8rem;
     display: flex;
     justify-content: space-evenly;
-    background: rgba(162,223,124,1);
-background: -moz-linear-gradient(left, rgba(162,223,124,1) 30%, rgba(162,223,124,1) 36%, rgba(162,223,124,1) 37%, rgba(255,255,255,1) 100%);
-background: -webkit-gradient(left top, right top, color-stop(30%, rgba(162,223,124,1)), color-stop(36%, rgba(162,223,124,1)), color-stop(37%, rgba(162,223,124,1)), color-stop(100%, rgba(255,255,255,1)));
-background: -webkit-linear-gradient(left, rgba(162,223,124,1) 30%, rgba(162,223,124,1) 36%, rgba(162,223,124,1) 37%, rgba(255,255,255,1) 100%);
-background: -o-linear-gradient(left, rgba(162,223,124,1) 30%, rgba(162,223,124,1) 36%, rgba(162,223,124,1) 37%, rgba(255,255,255,1) 100%);
-background: -ms-linear-gradient(left, rgba(162,223,124,1) 30%, rgba(162,223,124,1) 36%, rgba(162,223,124,1) 37%, rgba(255,255,255,1) 100%);
-background: linear-gradient(to right, rgba(162,223,124,1) 30%, rgba(162,223,124,1) 36%, rgba(162,223,124,1) 37%, rgba(255,255,255,1) 100%);
-filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#a2df7c', endColorstr='#ffffff', GradientType=1 );
-   
+    background: #DFDBE5
 }
 .igimg {
    
     margin-top: 2rem;
-    width: 8rem;
+    width: 4rem;
     margin-left: 2rem;
 
 
@@ -171,12 +166,14 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#a2df7c', end
     width: 100%;
     justify-content: space-between;
     font-weight: 400;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px,1fr));
 }
 
 .div-lorem {
-    width: 100%;
+    
     display: flex;
-    width: 35%;
+    width: 90%;
     margin-left: 2rem;
     margin-top: 2rem;
 }
@@ -185,6 +182,15 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#a2df7c', end
     width: 80%;
     -webkit-box-shadow: 5px 5px 27px 4px #000000; 
 box-shadow: 5px 5px 27px 4px #000000;
+}
+
+@media screen and (max-width: 490px) {
+    .lorem-container {
+        grid-template-columns:1fr ;
+    }
+    .clip2 {
+        display: none;
+    }
 }
 
 /*seccion contacto*/
@@ -203,6 +209,16 @@ box-shadow: 5px 5px 27px 4px #000000;
         display: flex;
 
 }
+.igimg2{
+    margin-top: 2rem;
+    width: 8rem;
+    margin-left: 2rem;
+}
+
+.igimg2:hover{
+    transform: scale(1.1);
+    transition: all 0.5s ease;
+}
 
 .sectioncontacto {
     width: 100%;
@@ -212,4 +228,63 @@ box-shadow: 5px 5px 27px 4px #000000;
 .logocontacto {
     display: flex;
     justify-content: center;
+}
+
+/*section tutoriales*/
+.encabezado-tutoriales{
+    width: 100%;
+    background-image: url(./img/gardining2.jpg) ;
+    background-repeat: no-repeat;
+    background-position:center;
+    background-size: cover;
+  
+    
+    
+}
+.encabezado-div h1{
+   width: 50%;
+   height: 12rem;
+   color: white;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   justify-content: flex-end;
+}
+
+
+
+.div-tutoriales {
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    gap: 2rem;
+    margin-top: 4rem;
+    display: flex;
+    justify-content: center;
+    border-radius: 10px;
+
+
+}
+
+.div-tutoriales video {
+    width: 100%;
+    height: 180px;
+}
+
+.div-tutoriales h2 {
+    text-decoration: underline solid 2px;
+}
+.div-tutoriales p {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+@media screen and (max-width:490px) {
+    .div-tutoriales {
+        display: block;
+        margin-top: 2rem;
+        margin-bottom: 2rem;
+
+    }
+    .encabezado-div h1 {
+        width: 100%;
+    }
 }
